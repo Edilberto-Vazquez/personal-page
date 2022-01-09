@@ -1,8 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Introduction from "../components/Introduction";
 
 const AboutMe = () => {
-  return <main className="about-me"></main>;
+  return (
+    <main className="about-me">
+      <Introduction />
+    </main>
+  );
 };
 
 export default AboutMe;
