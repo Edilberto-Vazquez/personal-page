@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AboutMe from "./pages/AboutMe";
+import App from "./routes/App";
 import "./styles/index.scss";
-ReactDOM.render(<AboutMe />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));

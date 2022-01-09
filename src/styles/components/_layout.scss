@@ -1,0 +1,4 @@
+.layout {
+  grid-template-rows: 93px calc(100% - 93px);
+  @include page-layout-grid;
+}
