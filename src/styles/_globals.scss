@@ -20,6 +20,11 @@ $size-text-3: 3.2rem;
   background-repeat: no-repeat;
 }
 
+@mixin hover-icons {
+  filter: invert(10%) sepia(37%) saturate(362%) hue-rotate(93deg)
+    brightness(96%) contrast(80%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
