@@ -1,0 +1,89 @@
+/* mixin for direction columun in sections and social-networks-icons in navbar */
+@mixin informations-column {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  padding: $container-padding;
+  display: grid;
+  background-color: $secondary-color;
+}
+
+.navbar__name {
+  font-size: $size-text-3;
+  color: $primary-color;
+}
+
+.navbar__icon-menu[type="checkbox"] {
+  position: absolute;
+  right: 24px;
+  appearance: none;
+  background: url("../assets/icons/icon-menu.svg");
+  cursor: pointer;
+  @include icons;
+}
+
+.information {
+  width: 100%;
+  height: 300px;
+  display: none;
+  grid-template-rows: 200px 100px;
+  justify-self: center;
+}
+
+.sections {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  span {
+    font-size: $size-text-2;
+    color: $primary-color;
+  }
+}
+
+.social-networks-icons {
+  &__github {
+    background: url("../assets/icons/icon-github.svg");
+    @include icons;
+  }
+  &__linkedin {
+    background: url("../assets/icons/icon-linkedin.svg");
+    @include icons;
+  }
+  &__twitter {
+    background: url("../assets/icons/icon-twitter.svg");
+    @include icons;
+  }
+  @include informations-column;
+}
+
+/* display the menu */
+.navbar__icon-menu:checked ~ .information {
+  display: grid;
+}
+
+@media (min-width: 1024px) {
+  .navbar__icon-menu {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    .information {
+      width: 700px;
+      height: 100%;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: 1fr;
+      .sections {
+        @include informations-column;
+      }
+    }
+  }
+}
