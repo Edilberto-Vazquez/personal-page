@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar">
       <span className="navbar__name">Edilberto</span>
       <input className="navbar__menu-icon" type="checkbox" />
-      <div className="information">
+      <div className="navbar-options">
         <div className="sections">
           <span className="sections__about-me">About Me</span>
           <span className="sections__resume">Resume</span>

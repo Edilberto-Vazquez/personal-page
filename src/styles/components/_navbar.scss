@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  height: auto;
+  height: 86px;
   padding: $container-padding;
   display: grid;
   background-color: $secondary-color;
@@ -20,12 +20,15 @@
   @include icons;
 }
 
-.information {
+.navbar-options {
   width: 100%;
   height: 300px;
   display: none;
   grid-template-rows: 200px 100px;
   justify-self: center;
+  position: absolute;
+  top: 86px;
+  background: $secondary-color;
 }
 
 .sections {
@@ -43,7 +46,7 @@
 }
 
 /* mixin for direction columun in sections and social-networks-icons in navbar */
-@mixin informations-column {
+@mixin navbar-options-display-colum {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, 1fr);
@@ -72,11 +75,11 @@
   &__twitter:hover {
     @include hover-icons;
   }
-  @include informations-column;
+  @include navbar-options-display-colum;
 }
 
 /* display the menu */
-.navbar__menu-icon:checked ~ .information {
+.navbar__menu-icon:checked ~ .navbar-options {
   display: grid;
 }
 
@@ -87,14 +90,15 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    .information {
+    .navbar-options {
       width: 700px;
-      height: 100%;
+      height: auto;
       display: grid;
       grid-auto-flow: column;
       grid-template-rows: 1fr;
+      position: static;
       .sections {
-        @include informations-column;
+        @include navbar-options-display-colum;
       }
     }
   }
