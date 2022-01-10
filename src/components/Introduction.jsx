@@ -3,18 +3,20 @@ import userimage from "../assets/images/user-image.png";
 
 const Introduction = () => {
   return (
-    <section>
-      <img src={userimage} alt="" />
-      <div>
-        <span>Full Stack JavaScript Developer</span>
-        <h1>Edilberto Vazquez Luna</h1>
-        <p>
+    <section className="introduction">
+      <img className="introduction__img" src={userimage} alt="" />
+      <div className="information">
+        <span className="information__job-title">
+          Full Stack JavaScript Developer
+        </span>
+        <h1 className="information__name">Edilberto Vazquez Luna</h1>
+        <p className="information__description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
           explicabo neque optio minima quo velit voluptate unde. Consequuntur
           dolore reiciendis ipsum, sunt quam veniam facere optio provident
           laudantium! Nulla, consectetur?
         </p>
-        <div>
+        <div className="information__btn">
           <button>Download CV</button>
           <button>Contact</button>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <span className="navbar__name">Edilberto</span>
+      <h3 className="navbar__name">Edilberto</h3>
       <input className="navbar__menu-icon" type="checkbox" />
       <div className="navbar-options">
         <div className="sections">
