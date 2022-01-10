@@ -1,4 +1,4 @@
-.introduction {
+.user-profile-card {
   width: 100%;
   height: min-content;
   padding: $padding-container;
@@ -8,14 +8,14 @@
   gap: $gap-container;
 }
 
-.introduction__img {
+.user-profile-card__img {
   width: 200px;
   border-radius: 50%;
   border: 12px solid white;
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.21);
 }
 
-.information {
+.information-card {
   max-width: 450px;
   display: grid;
   place-items: center;
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: 1024px) {
-  .introduction {
+  .user-profile-card {
     display: flex;
     justify-content: center;
   }
