@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [activetab, setActiveTab] = useState("/");
+  const sections = [
+    { name: "About me", section: "/" },
+    { name: "Resume", section: "/resume" },
+    { name: "Portafolio", section: "/portafolio" },
+  ];
   return (
     <nav className="navbar">
       <h3 className="navbar__name">Edilberto</h3>
       <input className="navbar__menu-icon" type="checkbox" />
       <div className="navbar-options">
         <div className="sections">
-          <span className="sections__about-me">About Me</span>
-          <span className="sections__resume">Resume</span>
-          <span className="sections__portafolio">Portafolio</span>
+          {sections.map(({ name, section }, key) => {
+            let className = `sections__selected`;
+            if (activetab === section) {
+              className = "sections__not-selected";
+            }
+            return (
+              <Link to={section} key={key}>
+                <button
+                  className={className}
+                  onClick={() => setActiveTab(section)}
+                >
+                  {name}
+                </button>
+              </Link>
+            );
+          })}
         </div>
         <div className="social-networks-icons">
           <a

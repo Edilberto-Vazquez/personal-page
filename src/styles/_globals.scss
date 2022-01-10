@@ -2,7 +2,8 @@
 
 $primary-color: #b8b8b8;
 $secondary-color: #303134;
-$strong-color: #78c599;
+$strong-color-primary: #78c599;
+$strong-color-secondary: #337be2;
 
 $font1: "Roboto", sans-serif;
 $size-text-1: 1.4rem;
@@ -61,7 +62,7 @@ $gap-container: 16px;
   }
 }
 
-/* set font and box-sizing */
+/* set global styles */
 * {
   box-sizing: border-box;
   margin: 0;
