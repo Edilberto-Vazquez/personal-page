@@ -6,12 +6,16 @@ import Resume from "../pages/Resume";
 import Portafolio from "../pages/Portafolio";
 import NotFound from "../pages/NotFound";
 const App = () => (
-  <BrowserRouter basename="/personal-page">
+  <BrowserRouter>
     <Layout>
       <Routes>
-        <Route exact path="/" element={<AboutMe />} />
-        <Route exact path="/resume" element={<Resume />} />
-        <Route exact path="/portafolio" element={<Portafolio />} />
+        <Route exact path="/personal-page" element={<AboutMe />} />
+        <Route exact path="/personal-page/resume" element={<Resume />} />
+        <Route
+          exact
+          path="/personal-page/portafolio"
+          element={<Portafolio />}
+        />
         <Route element={<NotFound />} />
       </Routes>
     </Layout>
