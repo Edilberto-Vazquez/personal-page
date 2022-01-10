@@ -6,14 +6,10 @@ import Resume from "../pages/Resume";
 import Portafolio from "../pages/Portafolio";
 import NotFound from "../pages/NotFound";
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/personal-page">
     <Layout>
       <Routes>
-        <Route
-          exact
-          path={process.env.PUBLIC_URL + "/"}
-          element={<AboutMe />}
-        />
+        <Route exact path="/" element={<AboutMe />} />
         <Route exact path="/resume" element={<Resume />} />
         <Route exact path="/portafolio" element={<Portafolio />} />
         <Route element={<NotFound />} />
