@@ -28,7 +28,7 @@
   place-items: center;
 }
 
-/*  */
+/* mixin for change the color of a section when it is selected */
 @mixin section-btn($status) {
   @if $status == selected {
     color: $primary-color;
