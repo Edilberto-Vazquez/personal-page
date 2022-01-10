@@ -3,25 +3,25 @@ const WhatIDoList = [
     icon: "frontend",
     title: "Front-End",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veritatis totam velit officia. Excepturi impedit ratione corrupti animi aut placeat est autem provident reprehenderit libero. Nobis similique cum dicta velit!",
+      "I develop with ReackJS and also I like to develop and integrate Web Components because it allows me integrate in other frameworks as Angular or Vu, I like to use SASS as a CSS preporcessor because it allows me to reuse code",
   },
   {
     icon: "backend",
     title: "Back-End",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veritatis totam velit officia. Excepturi impedit ratione corrupti animi aut placeat est autem provident reprehenderit libero. Nobis similique cum dicta velit!",
+      "In the backend I like to develop with NodeJS and Express and with Golang I like to use Gin as framework, ",
   },
   {
     icon: "programminglanguages",
     title: "Programming Languages",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veritatis totam velit officia. Excepturi impedit ratione corrupti animi aut placeat est autem provident reprehenderit libero. Nobis similique cum dicta velit!",
+      "the main languajes that I use are JavaScript Golang and Python, and I have basic knowledge in Java, TypeScrip and soon I will be learning Rust and SQL for DataBases",
   },
   {
     icon: "tecnologies",
     title: "Tecnologies",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veritatis totam velit officia. Excepturi impedit ratione corrupti animi aut placeat est autem provident reprehenderit libero. Nobis similique cum dicta velit!",
+      "With operative system I like to use linux the distribution that I currently use is Ubuntu with WSL, I use git as a version manager and GitHub as repository for my personal projects and for third party projects I use GitLab, The main data bases that I use are MySQL, PostgreSQL, and MongoDB and I have basic kwoledge with AWS",
   },
 ];
 

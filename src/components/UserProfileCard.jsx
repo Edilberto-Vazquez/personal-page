@@ -14,10 +14,12 @@ const UserProfileCard = () => {
         </span>
         <h1 className="information-card__name">Edilberto Vazquez Luna</h1>
         <p className="information-card__description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-          explicabo neque optio minima quo velit voluptate unde. Consequuntur
-          dolore reiciendis ipsum, sunt quam veniam facere optio provident
-          laudantium! Nulla, consectetur?
+          Hi, I am a developer who likes to learn about the world of technology
+          and play videogames, I don't use twitter much but you can follow me if
+          you want. Currently I specialize more in the Front-End with HTML, CSS
+          vanilla JavaScritp and ReactJS, I like NodeJS and Golang to use in the
+          backen and I use Python for projects where I have to work with AI and
+          Data Science.
         </p>
         <div className="information-card__btn">
           <button>Download CV</button>
