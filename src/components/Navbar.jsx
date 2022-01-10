@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [activetab, setActiveTab] = useState("/");
   const sections = [
-    { name: "About me", section: "/" },
-    { name: "Resume", section: "/resume" },
-    { name: "Portafolio", section: "/portafolio" },
+    { name: "About me", section: "" },
+    { name: "Resume", section: "resume" },
+    { name: "Portafolio", section: "portafolio" },
   ];
   return (
     <nav className="navbar">
@@ -20,7 +20,7 @@ const Navbar = () => {
               className = "sections__not-selected";
             }
             return (
-              <Link to={`personal-page/${section}`} key={key}>
+              <Link to={`/personal-page/${section}`} key={key}>
                 <button
                   className={className}
                   onClick={() => setActiveTab(section)}
