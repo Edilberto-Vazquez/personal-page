@@ -18,7 +18,9 @@ const Introduction = () => {
         </p>
         <div className="information__btn">
           <button>Download CV</button>
-          <button>Contact</button>
+          <a href="mailto:edi_vazquez12@hotmail.com">
+            <button>Contact</button>
+          </a>
         </div>
       </div>
     </section>

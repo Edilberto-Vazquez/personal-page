@@ -1,9 +1,10 @@
 @import "./globals";
 
+/* pages */
+@import "./pages/about-me";
+
 /* components */
 @import "./components/layout";
 @import "./components/navbar";
 @import "./components//introduction";
-
-/* pages */
-@import "./pages/about-me";
+@import "./components/description";

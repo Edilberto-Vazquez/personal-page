@@ -1,0 +1,15 @@
+.description-card {
+  width: 272px;
+  max-width: 300px;
+  display: grid;
+  row-gap: 16px;
+}
+
+.description-card__information {
+  width: 100%;
+  display: grid;
+  gap: $gap-container;
+  h4 {
+    font-size: $size-text-2;
+  }
+}
