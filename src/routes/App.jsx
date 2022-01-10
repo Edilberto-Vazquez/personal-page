@@ -9,7 +9,11 @@ const App = () => (
   <BrowserRouter>
     <Layout>
       <Routes>
-        <Route exact path="/" element={<AboutMe />} />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + "/"}
+          element={<AboutMe />}
+        />
         <Route exact path="/resume" element={<Resume />} />
         <Route exact path="/portafolio" element={<Portafolio />} />
         <Route element={<NotFound />} />
