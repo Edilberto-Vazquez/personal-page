@@ -20,7 +20,7 @@ const Navbar = () => {
               className = "sections__not-selected";
             }
             return (
-              <Link to={`/personal-page/${section}`} key={key}>
+              <Link to={`personal-page/${section}`} key={key}>
                 <button
                   className={className}
                   onClick={() => setActiveTab(section)}
