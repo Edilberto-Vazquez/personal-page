@@ -38,6 +38,18 @@ $gap-container: 16px;
     brightness(96%) contrast(80%);
 }
 
+@mixin icons-styles($icons) {
+  @each $class, $icon in $icons {
+    &__#{$class} {
+      background: url($icon);
+      @include icons;
+    }
+    &__#{$class}:hover {
+      @include hover-icons;
+    }
+  }
+}
+
 /* size and color for text global */
 @each $tag, $size,
   $color

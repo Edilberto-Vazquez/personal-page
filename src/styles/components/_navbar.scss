@@ -47,27 +47,12 @@
     }
   }
   .social-networks-icons {
-    &__github {
-      background: url("../assets/icons/icon-github.svg");
-      @include icons;
-    }
-    &__linkedin {
-      background: url("../assets/icons/icon-linkedin.svg");
-      @include icons;
-    }
-    &__twitter {
-      background: url("../assets/icons/icon-twitter.svg");
-      @include icons;
-    }
-    &__github:hover {
-      @include hover-icons;
-    }
-    &__linkedin:hover {
-      @include hover-icons;
-    }
-    &__twitter:hover {
-      @include hover-icons;
-    }
+    $icons: (
+      "github" "../assets/icons/icon-github.svg",
+      "linkedin" "../assets/icons/icon-linkedin.svg",
+      "twitter" "../assets/icons/icon-twitter.svg"
+    );
+    @include icons-styles($icons);
     @include navbar-options-display-colum;
   }
 }
