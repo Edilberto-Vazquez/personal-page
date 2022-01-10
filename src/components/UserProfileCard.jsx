@@ -1,10 +1,13 @@
 import React from "react";
-import userimage from "../assets/images/user-image.png";
 
 const UserProfileCard = () => {
   return (
     <section className="user-profile-card">
-      <img className="user-profile-card__img" src={userimage} alt="" />
+      <img
+        className="user-profile-card__img"
+        src="https://s.gravatar.com/avatar/1bf51742e09fee803505b9c0a845e262?s=80"
+        alt=""
+      />
       <div className="information-card">
         <span className="information-card__job-title">
           Full Stack JavaScript Developer
