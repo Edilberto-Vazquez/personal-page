@@ -1,9 +1,9 @@
 .about-me {
-  @include page-layout-flex;
+  @include page-layout-flex(true);
 }
 
 .what-i-do {
-  @include page-layout-flex;
+  @include page-layout-flex(false);
   padding: $padding-container;
 }
 

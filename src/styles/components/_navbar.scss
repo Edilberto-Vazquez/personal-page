@@ -3,6 +3,7 @@
   height: 86px;
   padding: $padding-container;
   display: grid;
+  position: fixed;
   background-color: $secondary-color;
 }
 
@@ -13,6 +14,7 @@
 
 .navbar__menu-icon[type="checkbox"] {
   position: absolute;
+  top: 24px;
   right: 24px;
   appearance: none;
   background: url("../assets/icons/icon-menu.svg");
