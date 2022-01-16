@@ -11,7 +11,7 @@
   align-items: center;
   border: none;
   font-size: $size-text-2;
-  background: $primary-color;
+  background: $soft-primary-color;
   border-radius: 5px;
   .arrow-image {
     height: 100%;
@@ -44,7 +44,8 @@
     place-self: center;
     text-decoration: none;
     text-align: center;
-    background-color: $primary-color;
+    color: $soft-secondary-color;
+    background-color: $soft-primary-color;
     border-radius: 5px;
   }
   a:hover {

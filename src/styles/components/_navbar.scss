@@ -4,12 +4,12 @@
   padding: $padding-container;
   display: grid;
   position: fixed;
-  background-color: $secondary-color;
+  background-color: $strong-color-primary;
 }
 
 .navbar__name {
   font-size: $size-title-1;
-  color: $primary-color;
+  color: $soft-secondary-color;
 }
 
 .navbar__menu-icon[type="checkbox"] {
@@ -33,9 +33,9 @@
 /* mixin for change the color of a section when it is selected */
 @mixin section-btn($status) {
   @if $status == selected {
-    color: $primary-color;
+    color: $soft-secondary-color;
   } @else {
-    color: $strong-color-primary;
+    color: $soft-primary-color;
   }
   font-size: $size-text-1;
   border: none;
@@ -50,12 +50,16 @@
   justify-self: center;
   position: absolute;
   top: 86px;
-  background: $secondary-color;
+  background: $strong-color-primary;
   .sections {
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items: center;
+    a > button {
+      font-weight: 700;
+      font-size: $size-text-2;
+    }
     &__selected {
       @include section-btn(selected);
     }
@@ -63,7 +67,7 @@
       @include section-btn(not-selected);
     }
     button:hover {
-      color: $strong-color-primary;
+      color: $soft-primary-color;
     }
   }
   .social-networks-icons {

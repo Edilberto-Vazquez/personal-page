@@ -23,7 +23,7 @@ const UserProfileCard = ({ technologies }) => {
         </p>
         <ul className="information-card__technologies">
           {technologies.map((technology) => {
-            return <li>{technology}</li>;
+            return <li key={technology}>{technology}</li>;
           })}
         </ul>
         <div className="information-card__btn">

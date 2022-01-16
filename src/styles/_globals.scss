@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 /* colors */
-$primary-color: #b8b8b8;
-$secondary-color: #303134;
+$soft-primary-color: #b8b8b8;
+$soft-secondary-color: #303134;
 $strong-color-primary: #337be2;
 $strong-color-secondary: #78c599;
 
@@ -50,8 +50,8 @@ li {
 
 /* style when the icons is hover */
 @mixin hover-icons {
-  filter: invert(41%) sepia(96%) saturate(590%) hue-rotate(181deg)
-    brightness(90%) contrast(97%);
+  filter: invert(63%) sepia(79%) saturate(1%) hue-rotate(26deg) brightness(98%)
+    contrast(98%);
 }
 
 /* func */
@@ -70,7 +70,10 @@ li {
 /* size and color for text global */
 @each $tag, $size,
   $color
-    in ("span" $size-text-2 $primary-color, "p" $size-text-1 $secondary-color)
+    in (
+      "span" $size-text-2 $soft-primary-color,
+      "p" $size-text-1 $soft-secondary-color
+    )
 {
   #{$tag} {
     font-size: $size;
