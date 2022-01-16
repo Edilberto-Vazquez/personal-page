@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [activetab, setActiveTab] = useState("/");
+  const [activetab, setActiveTab] = useState("");
   const sections = [
     { name: "About me", section: "" },
     { name: "Resume", section: "resume" },
