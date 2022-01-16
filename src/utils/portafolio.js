@@ -1,9 +1,9 @@
 const Projects = [
   {
-    projectName: "scientific",
+    projectName: "Scientific",
     information: {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos quo quam. Voluptatum libero consequatur tenetur in reprehenderit nemo dolor consectetur, culpa quae saepe officia impedit natus eligendi alias ad?",
+        "Using the rick and morty REST API through the web site built with TypeScript and using WebComponents and displaying the first 10 characters",
       repository: "https://github.com/Edilberto-Vazquez/scientific",
       pageOrAPI: "https://edilberto-vazquez.github.io/scientific/",
       technologiesUsed: [
@@ -19,12 +19,12 @@ const Projects = [
     },
   },
   {
-    projectName: "scientific1",
+    projectName: "De Avocado Shop",
     information: {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos quo quam. Voluptatum libero consequatur tenetur in reprehenderit nemo dolor consectetur, culpa quae saepe officia impedit natus eligendi alias ad?",
-      repository: "https://github.com/Edilberto-Vazquez/scientific",
-      pageOrAPI: "https://edilberto-vazquez.github.io/scientific/",
+        "page created to consume data from an avocado API using TypeScript and WebComponents",
+      repository: "https://github.com/Edilberto-Vazquez/de-avocado-shop",
+      pageOrAPI: "https://edilberto-vazquez.github.io/de-avocado-shop/",
       technologiesUsed: [
         "TypeScript",
         "JavaScript",
@@ -38,71 +38,31 @@ const Projects = [
     },
   },
   {
-    projectName: "scientific2",
+    projectName: "Page to watch videos",
     information: {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos quo quam. Voluptatum libero consequatur tenetur in reprehenderit nemo dolor consectetur, culpa quae saepe officia impedit natus eligendi alias ad?",
-      repository: "https://github.com/Edilberto-Vazquez/scientific",
-      pageOrAPI: "https://edilberto-vazquez.github.io/scientific/",
+        "this page was created to practice with react using redux and react-router-dom",
+      repository: "https://github.com/Edilberto-Vazquez/Video-Page",
+      pageOrAPI: "https://github.com/Edilberto-Vazquez/Video-Page",
       technologiesUsed: [
-        "TypeScript",
         "JavaScript",
         "HTML",
         "CSS",
-        "WebComponents",
         "webpack",
         "Babel",
         "NodeJS",
+        "SASS",
       ],
     },
   },
   {
-    projectName: "scientific3",
+    projectName: "Streaming vs Cinema",
     information: {
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos quo quam. Voluptatum libero consequatur tenetur in reprehenderit nemo dolor consectetur, culpa quae saepe officia impedit natus eligendi alias ad?",
-      repository: "https://github.com/Edilberto-Vazquez/scientific",
-      pageOrAPI: "https://edilberto-vazquez.github.io/scientific/",
+        "Page to comparate the price between the Cinema and Streaming platforms",
+      repository: "https://github.com/Edilberto-Vazquez/streaming-vs-cinema",
+      pageOrAPI: "https://edilberto-vazquez.github.io/streaming-vs-cinema/",
       technologiesUsed: [
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "WebComponents",
-        "webpack",
-        "Babel",
-        "NodeJS",
-      ],
-    },
-  },
-  {
-    projectName: "scientific4",
-    information: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos quo quam. Voluptatum libero consequatur tenetur in reprehenderit nemo dolor consectetur, culpa quae saepe officia impedit natus eligendi alias ad?",
-      repository: "https://github.com/Edilberto-Vazquez/scientific",
-      pageOrAPI: "https://edilberto-vazquez.github.io/scientific/",
-      technologiesUsed: [
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "WebComponents",
-        "webpack",
-        "Babel",
-        "NodeJS",
-      ],
-    },
-  },
-  {
-    projectName: "scientific5",
-    information: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos quo quam. Voluptatum libero consequatur tenetur in reprehenderit nemo dolor consectetur, culpa quae saepe officia impedit natus eligendi alias ad?",
-      repository: "https://github.com/Edilberto-Vazquez/scientific",
-      pageOrAPI: "https://edilberto-vazquez.github.io/scientific/",
-      technologiesUsed: [
-        "TypeScript",
         "JavaScript",
         "HTML",
         "CSS",
