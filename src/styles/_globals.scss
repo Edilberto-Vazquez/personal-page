@@ -17,6 +17,12 @@ $size-title-2: 4.2rem;
 $padding-container: 24px;
 $gap-container: 16px;
 
+/* Lists*/
+li {
+  list-style: none;
+  font-size: $size-text-1;
+}
+
 @mixin page-layout-grid {
   width: 100%;
   display: grid;
