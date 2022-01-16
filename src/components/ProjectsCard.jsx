@@ -13,12 +13,12 @@ const ProjectsCard = ({ projectName, information }) => {
     if (!display === true) {
       displayButton.current.style.background = "#b8b8b8";
     } else {
-      displayButton.current.style.background = "#78c599";
+      displayButton.current.style.background = "#337be2";
     }
   };
   useEffect(() => {
     if (display === false) {
-      displayButton.current.style.background = "#78c599";
+      displayButton.current.style.background = "#337be2";
     }
   }, []);
 

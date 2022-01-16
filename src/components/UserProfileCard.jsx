@@ -1,6 +1,6 @@
 import React from "react";
 
-const UserProfileCard = () => {
+const UserProfileCard = ({ technologies }) => {
   return (
     <section className="user-profile-card">
       <img
@@ -21,6 +21,11 @@ const UserProfileCard = () => {
           backen and I use Python for projects where I have to work with AI and
           Data Science.
         </p>
+        <ul className="information-card__technologies">
+          {technologies.map((technology) => {
+            return <li>{technology}</li>;
+          })}
+        </ul>
         <div className="information-card__btn">
           <button>Download CV</button>
           <a href="mailto:edi_vazquez12@hotmail.com">

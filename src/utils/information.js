@@ -1,3 +1,17 @@
+const languagesAndTechnologies = [
+  "JavaScrip",
+  "TypeScript",
+  "NodeJS",
+  "Python",
+  "Go",
+  "ReactJS",
+  "Redux",
+  "SASS",
+  "ExpressJS",
+  "PostgreSQL",
+  "MongoDB",
+];
+
 const WhatIDoList = [
   {
     icon: "frontend",
@@ -25,4 +39,4 @@ const WhatIDoList = [
   },
 ];
 
-export { WhatIDoList };
+export { languagesAndTechnologies, WhatIDoList };
