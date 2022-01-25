@@ -10,7 +10,7 @@ const UserProfileCard = ({ technologies }) => {
       />
       <div className="information-card">
         <span className="information-card__job-title">
-          Full Stack JavaScript Developer
+          Full Stack Developer
         </span>
         <h1 className="information-card__name">Edilberto Vazquez Luna</h1>
         <p className="information-card__description">
